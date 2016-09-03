@@ -16,15 +16,14 @@ Marketing has received a data file that may have been corrupted when it was expo
 -	The defined date format is explicit.
 -	The file name is explicit.
 -	New file submission may over-write the prior file.
-###Explanation of design:
+##Explanation of design:
 -	SSIS with a C# script component; provides flexibility, scalability, and considers potential use case changes.
--	Features:
---	Configurable file paths, outputs paths, file names, and target filter date.
---	Includes requested output, source file archive, invalid records output, rational database for historical file reporting.
---	Use of ragged right in case the data is in an unexpected column position.
---	Appends timestamp to output files, and validation result to output rows.
---	Date validation in C# for potential extensibility.
---	Invalid data reported as (valid dates in an incorrect format) and (content that does not convert to dates)
+-	Configurable file paths, outputs paths, file names, and target filter date.
+-	Includes requested output, source file archive, invalid records output, rational database for historical file reporting.
+-	Use of ragged right in case the data is in an unexpected column position.
+-	Appends timestamp to output files, and validation result to output rows.
+-	Date validation in C# for potential extensibility.
+-	Invalid data reported as (valid dates in an incorrect format) and (content that does not convert to dates)
 
 ##Questions:
 -	Is this a one item file? 
