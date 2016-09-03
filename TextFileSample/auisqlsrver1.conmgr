@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="auisqlsrver1"
+  DTS:DTSID="{5F24349A-98F4-41A9-AD10-DAE73BBB4229}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=auisqlsrver1.database.windows.net;User ID=mksa;Initial Catalog=auisqldbver1;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAnAancNwzR0OycxCLkWDjIwAAAAACAAAAAAAQZgAAAAEAACAAAADKM9LaC+BGu6Xu7+0VPHONytvmkUBIe8UAp3xGephNiQAAAAAOgAAAAAIAACAAAAApl7R+uoQRHMy9tGe5frJjCryCL2mON7w8Z6jSXzow3IAAAADIkJKR8GAfP8s4KvcAcNfkWIjdGddKtJS+uXL8cg+teG9Yyh83e0Rhym5+7dbbBp+L3IjrOf2hFICJ9oXgA7i7SFqlirMuVXNad8GA96LD2G4HFNlD+1g4Uvn+E+GuAnYk7ZwoEGHMc1CQlvyaqezr4fWg8C6tpM7idCDOz90ACkAAAAAusKDO36LSb4IOCUFmpKHJvVpfRsv6fBotWPvwGXGoLMoJGMYFmhPVuXgPAbUOwUik/Sv9HrehEH+2ie3NHXau</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

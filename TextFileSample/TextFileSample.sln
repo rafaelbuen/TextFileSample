@@ -5,6 +5,11 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "TextFileSample", "TextFileSample.dtproj", "{532B0F8E-C3EE-4125-91BB-CC81E007D701}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{FF6681BB-D821-40CA-9225-8DE14FBD0273}"
+	ProjectSection(SolutionItems) = preProject
+		SqlObjects.sql = SqlObjects.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
