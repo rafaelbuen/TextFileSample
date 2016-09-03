@@ -11,14 +11,25 @@ Marketing has received a data file that may have been corrupted when it was expo
 -	The resulting data output should be a list of dates.
 -	The corresponding data file is named MarketingDataFile.txt
 
-##Developer Notes
--	Assumptions:
+##Assumptions:
 -	The defined date format is explicit.
 -	The file name is explicit.
 -	New file submission may over-write the prior file.
 
 ##Explanation of design:
 -	SSIS with a C# script component; provides flexibility, scalability, and considers potential use case changes.
+
+##Workflow:
+-	Create directoty structures
+-	Create database objects
+-	Loop for files
+-	Log file to process
+-	Load raw data
+-	Augment constants, parameters, and vairables
+-	Date Validation
+-	Exports (1-Valid dates, 2-Invalid Dates)
+-	Archive file
+-	Delete File
 
 ##Features
 -	Configurable file paths, outputs paths, file names, and target filter date.
