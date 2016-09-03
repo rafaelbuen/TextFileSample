@@ -10,12 +10,33 @@ Criteria.
 	a. ie: If today is 09/29/2016, all dates 08282016 or earlier would be valid.
 -3. The data file does not contain time information.
 -4. The resulting data output should be a list of dates.
+-5. The corresponding data file is named MarketingDataFile.txt
 
-Developer Notes
--1. The corresponding datafile is named MarketingDataFile.txt
--2. State any assumptions you are making.
--3. You can use any library in the .Net framework. 
--4. Write a brief explanation about your design and why you chose it.
--5. Please post your solution on GitHub. We may ask questions within GitHub as a part of our code review.
--a. Handy tip: Performing all of your work within a branch in the repo and creating a Pull Request will allow us to link conversations to specific lines of code..
--6. We expect you may have questions about the exercise and requirements. Ask them…
+-Developer Notes
+-1. Assumptions:
+-	The defined date format is explicit.
+-	The file name is explicit.
+-	New file submission may over-write the prior file.
+-2. Explanation of design:
+-	SSIS with a C# script component; provides flexibility, scalability, and considers potential use case changes.
+-	Features:
+-		Configurable file paths, outputs paths, file names, and target filter date.
+-		Includes requested output, source file archive, invalid records output, rational database for historical file reporting.
+-		Use of ragged right in case the data is in an unexpected column position.
+-		Appends timestamp to output files, and validation result to output rows.
+-		Date validation in C# for potential extensibility.
+-		Invalid data reported as (valid dates in an incorrect format) and (content that does not convert to dates)
+-3. Questions:
+-	Is this a one item file? 
+-	If recurring files are expected, do you desire the file name as a wildcard? 
+-	Do you prefer to design to loop within a folder instead of looking for a specific file? 
+-	Is there a specific format for the output file(format, layout, code page)? 
+-	Aside from the files processed, should the valid dates also be stored in a relational database table? 
+-	Is there a need for job scheduling and notification? 
+-	Is there a preference for the date validation to be in C#, SQL or SSIS dataflow?
+-	Should valid dates in other formats be considered valid? ei: YYYYMMDD?
+-	Should raw row counts be captured? 
+-	Is the a desire to compare raw rows with processed and output rows? 
+-	is the desire to have error handling in: text, SQL, SSIS packages store, or not at this time? 
+
+
