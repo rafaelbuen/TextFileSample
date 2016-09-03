@@ -33,7 +33,7 @@ Marketing has received a data file that may have been corrupted when it was expo
 
 ##Features
 -	Configurable file paths, outputs paths, file names, and target filter date.
--	Includes requested output, source file archive, invalid records output, rational database for historical file reporting.
+-	Includes requested output, source file archive, invalid records output, Azure SQL database for historical file reporting.
 -	Use of ragged right in case the data is in an unexpected column position.
 -	Appends timestamp to output files, and validation result to output rows.
 -	Date validation in C# for potential extensibility.
@@ -50,6 +50,6 @@ Marketing has received a data file that may have been corrupted when it was expo
 -	Should valid dates in other formats be considered valid? ei: YYYYMMDD?
 -	Should raw row counts be captured? 
 -	Is the a desire to compare raw rows with processed and output rows? 
--	is the desire to have error handling in: text, SQL, SSIS packages store, or not at this time? 
+-	Is the desire to have error handling in: text, SQL, SSIS packages store, or not at this time? 
 
 
